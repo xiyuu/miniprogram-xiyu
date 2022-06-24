@@ -1,0 +1,47 @@
+<!--index.wxml-->
+<!-- <view class="my-container">
+  <view class="userinfo">
+    <block wx:if="{{canIUseOpenData}}">
+      <view class="userinfo-avatar" bindtap="bindViewTap">
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+      <open-data type="userNickName"></open-data>
+    </block>
+    <block wx:elif="{{!hasUserInfo}}">
+      <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
+      <button wx:elif="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+      <view wx:else> 请使用1.4.4及以上版本基础库 </view>
+    </block>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view> -->
+<view class="container index">
+  <!-- 最新体重 -->
+  <view class=" latest-weight">
+    <view class="test-w" wx:if="{{latestWeight}}">最新体重：{{latestWeight}}</view>
+    <view class="test-w">{{jinrishici}}</view>
+    <view class="test-w">-- {{jinrishiciorigin.author}}（{{jinrishiciorigin.dynasty}}）</view>
+    <view class="test-w" bindtap="viewExplain">BMI身体质量指数 <text class="tag">{{latestBMI ? latestBMI : "无"}}</text>
+      <image style="width: 15px; height: 15px; margin-left: 10px;vertical-align: middle;" src="../../icon/提示说明.png"></image>
+    </view>
+  </view>
+  <!-- 记一下 -->
+  <view class="record-btn">
+    <button class="primary-btn" style="width: 90%;" type="primary" hover-class='primary-hover' bindtap="gotoRecord"> 记一下 </button>
+  </view>
+  <!-- 体重记录列表 -->
+  <view class="record-list" wx:for-items="{{recordData}}" wx:for-item="item">
+    <view class="record-item" data-weight="{{item.weight}}" bindtap="editRecord">
+      <view>记录日期：{{item.recordDate}}</view>
+      <view>体重（Kg）：{{item.weightkg}}kg</view>
+      <view>体重（斤）：{{item.weight}}斤</view>
+       BMI： <text class="tag">{{item.BMI}}</text>
+    </view>
+  </view>
+</view>

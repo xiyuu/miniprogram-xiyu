@@ -1,0 +1,6 @@
+<!--pages/my/authorsrc/authorsrc.wxml-->
+<!-- 图片命名应该使用英文来命名 其实中文命名也没有错但是有时候可行有时候又不管用了 建议英文命名 -->
+<view class="container">
+    <!-- <image bindtap="previewImg" src="{{image}}" data-src="{{image}}"  mode="cover"></image> -->
+    <image src="{{image}}" data-src="{{image}}"  mode="cover"></image>
+</view>

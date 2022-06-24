@@ -1,0 +1,106 @@
+/* pages/statistics/statistics.wxss */
+Page {
+    /* 全局样式 */
+    background: rgb(244, 245, 249);
+    height: 100%;
+    position: fixed;
+}
+
+.fontColorBox {
+    /* 文字默认颜色 */
+    color: black;
+}
+
+.navBox {
+    /* 顶部tab盒子样式 */
+    width: 100%;
+    height: 108rpx;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titleBox {
+    /* 未选中文字的样式 */
+    color: rgb(168, 170, 175);
+    font-size: 35rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lineBox,
+.notLineBox {
+    /* 选中及未选中底线共同样式 */
+    width: 180rpx;
+    height: 8rpx;
+}
+
+.lineBox {
+    /* 选中底线样式 */
+    background: #FFAAD5;
+    margin-top: 16rpx;
+    border-radius: 4rpx;
+}
+
+.notLineBox {
+    /* 未选中底线样式 */
+    background: transparent;
+}
+
+.swiperTtemBox {
+    /* 底部内容样式 */
+    /* height: 100vh;
+    overflow: scroll; */
+    height: 500rpx;
+    margin-top: 24rpx;
+    padding-top: 24rpx;
+    background: white;
+}
+
+ec-canvas {
+    width: 100%;
+    height: 100%;
+}
+
+/* 时间日期选择范围*/
+.range-style {
+    display: flex;
+    margin-top: 30rpx;
+    align-items: center;
+    padding: 0 24rpx;
+    background-color: #fff;
+}
+
+.picker_group {
+    color: #888;
+    border: 1rpx solid #A4A6AE;
+    border-radius: 15rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24rpx 32rpx;
+    font-size: 32rpx;
+}
+
+.text-style1 {
+    color: #A4A6AE;
+}
+
+.text-style2 {
+    color: rgb(0, 0, 0, 0.8);
+}
+
+.picker_group picker {
+    font-size: 34rpx;
+    height: 45rpx;
+    padding-left: 24rpx;
+    padding-right: 24rpx;
+    line-height: 48rpx;
+}
+
+.btn {
+    display: flex;
+    margin-top: 24rpx;
+}

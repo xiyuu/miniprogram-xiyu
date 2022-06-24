@@ -1,0 +1,48 @@
+<!--pages/statistics/record/record.wxml-->
+<view class="container">
+    <view class="page-body">
+        <form catchsubmit="formSubmit" catchreset="formReset">
+            <view class="page-section">
+                <view class="page-title">身高：</view>
+                <view class="page-content">
+                    <input class="page-input"  type="number"  maxlength="6"  name="height"  value="{{height}}"   bindinput= "bindKeyInput" placeholder="请输入身高" />
+                </view>
+            </view>
+            <view class="page-section">
+                <view class="page-title">体重（Kg）：</view>
+                <view class="page-content">
+                    <input class="page-input" type="number" maxlength="6" name="weightkg"  value="{{weightkg}}"   bindinput= "weightkgChange" placeholder="请输入体重" />
+                </view>
+            </view>
+            <view class="page-section">
+                <view class="page-title">体重（斤）：</view>
+                <view class="page-content">
+                    <input class="page-input" type="number" name="weight" disabled="true"  value="{{weight}}" placeholder="请输入体重" />
+                </view>
+            </view>
+            <view class="page-section">
+                <view class="page-title">BMI：</view>
+                <view class="page-content">
+                    <input class="page-input" name="BMI" disabled="true"  value="{{BMI}}" placeholder="自动计算BMI" />
+                </view>
+            </view>
+            <view class="page-section">
+                <view class="page-title">记录日期：</view>
+                <view class="page-content">
+                    <input class="page-input" name="recordDate"  value="{{recordDate}}" />
+                </view>
+            </view>
+            <view class="page-section">
+                <view class="page-title">备注：</view>
+                <view class="page-content">
+                    <input class="page-input" name="note"  maxlength="20"  value="{{note}}" placeholder="请输入备注" />
+                </view>
+            </view>
+            <view class="btn-area">
+                <button class="primary-btn"   style="width: 290px;"  type="primary" hover-class='primary-hover' formType="submit">保存</button>
+                <button style="margin-top: 16px;width: 290px;"  wx:if="{{!weight}}" type="warn" formType="reset">取消</button>
+                <button style="margin-top: 16px;width: 290px;"  wx:if="{{weight}}" type="warn"  bindtap="delete">删除</button>
+            </view>
+        </form>
+    </view>
+</view>

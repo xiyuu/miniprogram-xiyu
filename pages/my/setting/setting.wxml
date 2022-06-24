@@ -1,0 +1,49 @@
+<!--pages/my/setting/setting.wxml-->
+<view class='setting-container'>
+    <!-- 标题 -->
+    <view class='item-title'>
+        <view>展示单位</view>
+        <view class='item-desc'>选择习惯的展示单位（默认：公斤）</view>
+    </view>
+    <!-- 内容 -->
+    <view class='item-content'>
+        <view class='item-content-title'>
+            <text style="width: 500rpx;">使用斤展示</text> <view> <switch checked="{{switch1Checked}}"  color="#FFAAD5" bindchange="switch1Change"/></view>
+        </view>
+    </view>
+    <view class='item-content'>
+        <view class='item-content-title'>
+            <text style="width: 500rpx;">使用公斤展示</text> <view> <switch checked="{{switch2Checked}}" color="#FFAAD5" bindchange="switch2Change"/></view>
+        </view>
+    </view>
+</view>
+
+
+<view class='setting-container'>
+    <!-- 标题 -->
+    <view class='item-title'>
+        <view>记录分享（自动开启/关闭）</view>
+        <view class='item-desc'>记录查看记录，与友人相互查看。有数据时自动开启</view>
+    </view>
+    <!-- 内容 -->
+    <view class='item-content'>
+        <view class='item-content-title'>
+            <text style="width: 460rpx;">开启足迹</text> <text class='item-content-desc'>已关闭</text>
+        </view>
+    </view>
+</view>
+
+
+<view class='setting-container'>
+    <!-- 标题 -->
+    <view class='item-title'>
+        <view>主题（内部测试）</view>
+        <view class='item-desc'>选择喜欢的主题</view>
+    </view>
+    <!-- 内容 -->
+    <view class='item-content'>
+        <view class='item-content-title'>
+            <text style="width: 460rpx;">选择主题</text> <text class='item-content-desc'>默认主题</text>
+        </view>
+    </view>
+</view>

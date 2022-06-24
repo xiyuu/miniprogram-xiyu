@@ -1,0 +1,5 @@
+<!--pages/find/desc1/desc1.wxml-->
+<view class="container description">
+    <text class="description-title">什么是标准体重</text>
+    <text class="description-content"> 早晨起来上完厕所，空腹称的体重是一天当中 最为标准的净体重， 因为一天当中，我们随着进食的多少， 体重的多少也发生着不同的变化！尤其以下午和晚上体重为最重，  因为每到下午和晚上，  身体都会发生不同程度的水肿现象，从而体重也是一天当中最重的！所以以每天早的体重为准</text>
+</view>

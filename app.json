@@ -1,0 +1,54 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/statistics/statistics",
+        "pages/find/find",
+        "pages/my/my",
+        "pages/logs/logs",
+        "pages/index/record/record",
+        "pages/index/description/description",
+        "pages/my/authorsrc/authorsrc",
+        "pages/my/setting/setting",
+        "pages/find/desc1/desc1",
+        "pages/find/desc2/desc2"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#FFAAD5",
+        "navigationBarTitleText": "体重小记",
+        "navigationBarTextStyle": "white"
+    },
+    "tabBar": {
+        "color": "#000000",
+        "selectedColor": "#FFAAD5",
+        "backgroundColor": "#FFFFFF",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "iconPath": "./icon/体重 (1).png",
+                "selectedIconPath": "./icon/体重.png"
+            },
+            {
+                "pagePath": "pages/statistics/statistics",
+                "text": "统计",
+                "iconPath": "./icon/统计 (1).png",
+                "selectedIconPath": "./icon/统计.png"
+            },
+            {
+                "pagePath": "pages/find/find",
+                "text": "发现",
+                "iconPath": "./icon/发现 (1).png",
+                "selectedIconPath": "./icon/发现.png"
+            },
+            {
+                "pagePath": "pages/my/my",
+                "text": "我的",
+                "iconPath": "./icon/我的 (1).png",
+                "selectedIconPath": "./icon/我的.png"
+            }
+        ]
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
+}

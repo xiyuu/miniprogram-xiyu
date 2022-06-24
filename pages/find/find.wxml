@@ -1,0 +1,23 @@
+<!--pages/find/find.wxml-->
+<view class='find-container'>
+    <view class='item-title' bindtap="viewExplain">
+        什么是BMI
+    </view>
+</view>
+
+
+<view class='find-container'>
+    <view class='item-title' bindtap="viewExplain1">
+        什么是标准体重
+    </view>
+</view>
+
+
+<view class='find-container'>
+    <view class='item-title' bindtap="viewExplain2">
+        减肥时，不搞懂这3个体重常识，很难真的变瘦
+    </view>
+</view>
+
+
+

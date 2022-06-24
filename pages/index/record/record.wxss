@@ -1,0 +1,21 @@
+/* pages/statistics/record/record.wxss */
+.btn-area {
+    margin-top: 100rpx;
+}
+
+.page-section {
+    display: flex;
+    margin-bottom: 15rpx;
+    padding-bottom: 15rpx;
+    border-bottom: 1px solid #000000;
+}
+
+.page-title {
+    width: 235rpx;
+}
+
+.page-content {
+    margin-top: 8rpx;
+}
+
+.page-input {}

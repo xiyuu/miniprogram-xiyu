@@ -1,0 +1,6 @@
+<!--pages/index/description/description.wxml-->
+<view class="container description">
+    <text class="description-title">什么是BMI指数</text>
+    <text class="description-content"> 标准体重测定的方法很简单，即标准体重（千克）＝身高（厘米）-105。实际体重在根据公式计算出的标准体重的±10%内属于正常，大于20%为肥胖，20%-30%为轻度肥胖，30%-50%为中度肥胖，大于50%为重度肥胖。</text>
+    <text class="description-content"> 体重指数（BMI）是世界卫生组织（WHO）推荐的国际统一使用的肥胖分型标准，即BMI＝体重（千克）／身高（米2）</text>
+</view>
