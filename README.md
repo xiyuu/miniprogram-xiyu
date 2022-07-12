@@ -1,2 +1,3 @@
-# miniprogram-xiyu
-- 小程序
+## miniprogram-xiyu
+#一个记录体重的小程序，当前功能不太完善，后续空闲之余会继续进行功能添加以及优化
+
